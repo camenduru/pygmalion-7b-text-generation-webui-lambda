@@ -1,7 +1,6 @@
 import os
-os.system(f"pip install -q torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchaudio==2.0.1+cu118 torchtext==0.15.1 torchdata==0.6.0 --extra-index-url https://download.pytorch.org/whl/cu118 -U")
-
-os.system(f"git lfs install")
+# os.system(f"pip install -q torch==2.0.0+cu118 torchvision==0.15.1+cu118 torchaudio==2.0.1+cu118 torchtext==0.15.1 torchdata==0.6.0 --extra-index-url https://download.pytorch.org/whl/cu118 -U")
+# os.system(f"git lfs install")
 os.system(f"git clone -b v1.4 https://github.com/camenduru/text-generation-webui")
 os.chdir(f"/home/demo/source/text-generation-webui")
 os.system(f"pip install -r requirements.txt")
@@ -15,7 +14,7 @@ os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggin
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/pyg-7b/resolve/main/model-00002-of-00002.safetensors -d /home/demo/source/text-generation-webui/models/pyg-7b -o model-00002-of-00002.safetensors")
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/pyg-7b/resolve/main/model.safetensors.index.json -d /home/demo/source/text-generation-webui/models/pyg-7b -o model.safetensors.index.json")
 
-# os.system(f"python server.py --chat")
+os.system(f"python server.py --chat")
 
 # import gradio as gr
 # from subprocess import getoutput

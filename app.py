@@ -8,9 +8,9 @@ os.chdir(f"/home/demo/source/text-generation-webui")
 os.system(f"pip install -r requirements.txt")
 
 os.system(f"mkdir /home/demo/source/text-generation-webui/repositories")
-os.system(f"cd /home/demo/source/text-generation-webui/repositories")
+os.chdir(f"/home/demo/source/text-generation-webui/repositories")
 os.system(f"git clone -b v1.2 https://github.com/camenduru/GPTQ-for-LLaMa")
-os.system(f"cd GPTQ-for-LLaMa")
+os.chdir(f"GPTQ-for-LLaMa")
 os.system(f"python setup_cuda.py install")
 
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/vicuna-v1.1-13b-GPTQ-4bit-128g/raw/main/config.json -d /home/demo/source/text-generation-webui/models/vicuna-v1.1-13b-GPTQ-4bit-128g -o config.json")

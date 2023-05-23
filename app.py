@@ -21,4 +21,4 @@ os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggin
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/vicuna-v1.1-13b-GPTQ-4bit-128g/resolve/main/4bit-128g.safetensors -d /home/demo/source/text-generation-webui/models/vicuna-v1.1-13b-GPTQ-4bit-128g -o 4bit-128g.safetensors")
 
 os.chdir(f"/home/demo/source/text-generation-webui")
-os.system(f"python server.py --share --chat --wbits 4 --groupsize 128")
+os.system(f"python server.py --chat --wbits 4 --groupsize 128")

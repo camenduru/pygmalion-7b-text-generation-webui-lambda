@@ -9,7 +9,7 @@ os.system(f"pip install -r requirements.txt")
 
 os.system(f"mkdir /home/demo/source/text-generation-webui/repositories")
 os.system(f"cd /home/demo/source/text-generation-webui/repositories")
-os.system(f"git clone -b v1.2 https://github.com/camenduru/GPTQ-for-LLaMa.git")
+os.system(f"git clone -b v1.2 https://github.com/camenduru/GPTQ-for-LLaMa")
 os.system(f"cd GPTQ-for-LLaMa")
 os.system(f"python setup_cuda.py install")
 

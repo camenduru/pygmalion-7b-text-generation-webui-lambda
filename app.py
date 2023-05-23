@@ -1,3 +1,5 @@
+import os
+
 os.system(f"git lfs install")
 
 os.system(f"git clone -b v1.2 https://github.com/camenduru/text-generation-webui")

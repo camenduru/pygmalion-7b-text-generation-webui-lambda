@@ -15,3 +15,17 @@ os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggin
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/pyg-7b/resolve/main/model.safetensors.index.json -d /home/demo/source/text-generation-webui/models/pyg-7b -o model.safetensors.index.json")
 
 os.system(f"python server.py --chat")
+
+
+# ## Links
+
+# 🐣 Please follow me for new updates https://twitter.com/camenduru <br />
+# 🔥 Please join our discord server https://discord.gg/k5BwmmvJJU
+
+# ### Text Generation Web UI 
+
+# https://github.com/oobabooga/text-generation-webui (Thanks to @oobabooga ❤)
+
+# ### Model
+
+# https://huggingface.co/Neko-Institute-of-Science/pygmalion-7b (Thanks to Neko-Institute-of-Science ❤)

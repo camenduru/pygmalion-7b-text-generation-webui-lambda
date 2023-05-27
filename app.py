@@ -5,6 +5,7 @@ os.system(f"git clone -b v1.4 https://github.com/camenduru/text-generation-webui
 os.chdir(f"/home/demo/source")
 os.system(f"pip install -r requirements.txt")
 os.chdir(f"/home/demo/source/text-generation-webui")
+os.system(f"git fetch && git checkout dcc3e540058752bb3fcf223cf85e477c73efdd71")
 os.system(f"pip install -r requirements.txt")
 
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/pyg-7b/raw/main/config.json -d /home/demo/source/text-generation-webui/models/pyg-7b -o config.json")
